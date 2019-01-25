@@ -20,7 +20,7 @@ export default class ProjectTiles extends React.Component {
                         <div className="projectTitle">{title} ({type})</div>
                         <div className="contentGrid sourceCode">
                             <img src={githubIcon} />
-                            <a href={code}>View source code here</a>
+                            <a href={code} target="_blank">View source code here</a>
                         </div>
                         <div className="projectDescription">{description}</div>
                         <GenerateTechTiles commaSeparatedTechString={tech} />

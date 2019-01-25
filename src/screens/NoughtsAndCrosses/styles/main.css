@@ -1,0 +1,39 @@
+#noughtsandcrosses {
+    text-align: center;
+    font-family: bankgothic lt bt;
+    color: grey;
+    padding: 20px 0;
+}
+
+#noughtsandcrosses h2 {
+    color: white;
+}
+
+#noughtsandcrosses .btn {
+    height: 50px;
+    width: 50px;
+    font-family: bankgothic md bt;
+    font-weight: bold;
+    margin: 3px;
+}
+
+#noughtsandcrosses .board {
+    color: white;
+    background: white;
+}
+
+#noughtsandcrosses table {
+    margin: auto;
+}
+
+#noughtsandcrosses td {
+    padding: 0px 20px 0px 20px;
+}
+
+#noughtsandcrosses .left {
+    text-align: left;
+}
+
+#noughtsandcrosses .right {
+    text-align: right;
+}

@@ -1,0 +1,28 @@
+// be sure to add scss files to sideEffects in package.json ("sideEffects": ["*.scss"]) or they will be
+// pruned in production via tree shaking
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap"; // requires jquery and popper.js as peer dependencies
+
+nav.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1; // necessary to keep navbar on top when using react-masonry-component
+    font-family: 'Malgun Gothic', $font-family-sans-serif; // $font-family-sans-serif is from ~bootstrap\scss\_variables.scss
+}
+
+nav.navbar img {
+    height: $navbar-brand-height;
+    margin-right: $navbar-padding-x;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 525px) {
+    nav.navbar {
+        position: fixed;
+    }
+}

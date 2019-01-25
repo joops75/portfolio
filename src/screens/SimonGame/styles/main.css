@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'OpenSansCondensed-Light';
+    src:  url('../assets/fonts/OpenSansCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PatuaOne-Regular';
+    src:  url('../assets/fonts/PatuaOne-Regular.ttf') format('truetype');
+}
+
+#simongame {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 560px;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+    margin: auto;
+    padding: 40px 0;
+}
+
+#simongame .base {
+    margin: auto;
+    background: rgb(50, 50, 50);
+    height: 480px;
+    width: 480px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+}
+
+#simongame .up-left {
+    display: inline-block;
+    background: rgb(0, 153, 51);
+    height: 240px;
+    width: 240px;
+    border-top: 20px solid rgb(50, 50, 50);
+    border-right: 10px solid rgb(50, 50, 50);
+    border-bottom: 10px solid rgb(50, 50, 50);
+    border-left: 20px solid rgb(50, 50, 50);
+    border-radius: 100% 0% 0% 0%;
+}
+
+#simongame .up-right {
+    float: right;
+    background: rgb(183, 0, 0);
+    height: 240px;
+    width: 240px;
+    border-top: 20px solid rgb(50, 50, 50);
+    border-right: 20px solid rgb(50, 50, 50);
+    border-bottom: 10px solid rgb(50, 50, 50);
+    border-left: 10px solid rgb(50, 50, 50);
+    border-radius: 0% 100% 0% 0%;
+}
+
+#simongame .bottom-left {
+    display: inline-block;
+    background: rgb(200, 200, 0);
+    height: 240px;
+    width: 240px;
+    margin: -5px 0px 0px 0px;
+    border-top: 10px solid rgb(50, 50, 50);
+    border-right: 10px solid rgb(50, 50, 50);
+    border-bottom: 20px solid rgb(50, 50, 50);
+    border-left: 20px solid rgb(50, 50, 50);
+    border-radius: 0% 0% 0% 100%;
+}
+
+#simongame .bottom-right {
+    float: right;
+    background: rgb(0, 153, 205);
+    height: 240px;
+    width: 240px;
+    margin: -5px 0px 0px 0px;
+    border-top: 10px solid rgb(50, 50, 50);
+    border-right: 20px solid rgb(50, 50, 50);
+    border-bottom: 20px solid rgb(50, 50, 50);
+    border-left: 10px solid rgb(50, 50, 50);
+    border-radius: 0% 0% 100% 0%;
+}
+
+#simongame .center {
+    position: absolute;
+    background: rgb(240, 240, 240);
+    height: 240px;
+    width: 240px;
+    margin: 120px 0px 0px 120px;
+    border: 20px solid rgb(50, 50, 50);
+    border-radius: 50%;
+}
+
+#simongame p {
+    display: inline-block;
+    font-family: 'PatuaOne-Regular', serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0px -10px 21px;
+}
+
+#simongame i {
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+}
+
+#simongame #light {
+    height: 12px;
+    width: 12px;
+    background: rgb(80, 0, 0);
+    margin: 0px 0px 0px 142px;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 50%;
+}
+
+#simongame #counter {
+    display: inline-block;
+    font-family: IrisUPC;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(80, 0, 0);
+    height: 45px;
+    width: 50px;
+    background: rgb(80, 0, 0);
+    margin: -5px 0px 0px 20px;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 20%;
+}
+
+#simongame #start {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: rgb(220, 0, 0);
+    margin: 0px 0px -7px 15px;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgb(0, 0, 0);
+}
+
+#simongame #start-depress {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: rgb(220, 0, 0);
+    margin: 4px 0px 0px -25px;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+}
+
+#simongame #strict {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: rgb(220, 220, 0);
+    margin: 0px 0px -7px 25px;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgb(0, 0, 0);
+}
+
+#simongame #strict-depress {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: rgb(220, 220, 0);
+    margin: 4px 0px 0px -25px;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+}
+
+#simongame span {
+    font-family: 'OpenSansCondensed-Light', arial;
+    letter-spacing: 2.5px;
+}
+
+#simongame #count-text {
+    font-size: 12px;
+    margin: 0px 0px 0px 25px;
+}
+
+#simongame #start-text {
+    font-size: 12px;
+    margin: 0px 0px 0px 14px;
+}
+
+#simongame #strict-text {
+    font-size: 12px;
+    margin: 0px 0px 0px 11px;
+}
+
+#simongame #off-text {
+    position: absolute;
+    font-family: 'Open+Sans+Condensed', arial;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    margin: -25px 0px 0px 52px;
+}
+
+#simongame #switch-well {
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    background: black;
+    margin: 2px 0px 0px 80px;
+}
+
+#simongame #switch-off {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: rgb(0, 153, 205);
+    margin: -25px 0px -10px 80px;
+    border: 2px solid rgb(50, 50, 50);
+}
+
+#simongame #switch-on {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: rgb(0, 153, 205);
+    margin: -25px 0px 0px 100px;
+    border: 2px solid rgb(50, 50, 50);
+}
+
+#simongame #on-text {
+    position: absolute;
+    font-family: 'Open+Sans+Condensed', arial;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    margin: -25px 0px 0px 126px;
+}

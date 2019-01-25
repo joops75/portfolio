@@ -1,0 +1,13 @@
+#dungeoncrawler {
+  text-align: center;
+  font-family: 'Old English Text MT', arial;
+  color: white;
+}
+#dungeoncrawler span {
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+}
+#dungeoncrawler button {
+  font-family: 'Old English Text MT', arial;
+  margin: 0px 20px 0px 20px;
+}

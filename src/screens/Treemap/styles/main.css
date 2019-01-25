@@ -1,0 +1,84 @@
+#treemap {
+    width: 1240px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Kristen ITC', Guatami;
+    color: black;
+}
+
+#treemap #header {
+    width: 1000px;
+    height: 30px;
+    margin: auto;
+}
+
+#treemap #buttonGroup {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#treemap .button {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+#treemap .button:hover {
+    cursor: pointer;
+    background: rgb(230, 149, 0);
+}
+
+#treemap #title {
+    width: 1000px;
+    margin: auto;
+}
+
+#treemap #spacer {
+    height: 20px;
+}
+
+#treemap #description {
+    width: 1000px;
+    height: 40px;
+    margin: auto;
+}
+
+#treemap #page {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+}
+
+#treemap #legendArea {
+    width: 1000px;
+    height: 80px;
+    margin: auto;
+}
+
+#treemap #legendTitle {
+    width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#treemap text {
+    pointer-events: none;
+}
+
+#treemap #tooltip {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 230px;
+    text-align: left;
+    background: rgb(237, 226, 109);
+    padding: 10px;
+    border-radius: 10px;
+}

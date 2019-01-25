@@ -1,0 +1,180 @@
+@font-face
+  font-family: 'alarm clock'
+  src: url('../assets/fonts/alarm clock.ttf') format('truetype')
+
+@font-face
+  font-family: 'K22 Xanthus'
+  src: url('../assets/fonts/K22 Xanthus.ttf') format('truetype')
+
+@font-face
+  font-family: 'FasterOne-Regular'
+  src: url('../assets/fonts/FasterOne-Regular.ttf') format('truetype')
+
+@font-face
+  font-family: 'ContrailOne-Regular'
+  src: url('../assets/fonts/ContrailOne-Regular.ttf') format('truetype')
+
+$backgroundColor: rgb(80, 80, 80)
+$frameWidth: 390px
+$drumPadsWidth: 350px
+$margin: 15px
+$rowHeight: ($drumPadsWidth - 4 * $margin) / 3
+$shadow: 5px
+
+#drummachine
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  width: $frameWidth
+  margin: auto
+  padding: 20px 0 20px 0
+
+#drummachine #unit
+  width: $drumPadsWidth
+  background: $backgroundColor
+  box-shadow: 7px 7px 3px black
+  color: white
+  margin: auto
+  padding-top: $margin
+  border-radius: 1.5 * $margin
+
+#drummachine #title
+  font-family: 'FasterOne-Regular', cursive
+  font-size: 20px
+  text-align: center
+  margin: 0px 0px $margin 0px
+
+#drummachine #display
+  width: $drumPadsWidth - 2 * $margin
+  height: 3 * $rowHeight / 4
+  background: rgb(70, 0, 0)
+  font-family: 'alarm clock', IrisUPC
+  font-size: 4 * $rowHeight / 9
+  color: rgb(255, 50, 50)
+  font-weight: bold
+  text-align: center
+  line-height: 3 * $rowHeight / 4
+  margin: auto
+  border-radius: $margin / 2
+
+#drummachine .label
+  display: inline-block
+  text-align: center
+  font-family: 'ContrailOne-Regular', cursive
+  margin: $margin / 2 $margin $margin / 2 $margin
+
+#drummachine #powerLabel
+  width: ($drumPadsWidth - 2 * $rowHeight - 6 * $margin) / 2
+
+#drummachine #volumeLabel
+  width: 2 * $rowHeight
+
+#drummachine #bankLabel
+  width: ($drumPadsWidth - 2 * $rowHeight - 6 * $margin) / 2
+
+#drummachine #volumeSliderArea
+  display: inline-block
+  height: $rowHeight / 2
+  width: 2 * $rowHeight
+  background: $backgroundColor
+  margin: 0px $margin 0px $margin
+
+#drummachine #volumeGroove
+  position: relative
+  top: $rowHeight / 4 - $margin / 2
+  height: $margin
+  width: 2 * $rowHeight
+  background: black
+  border-radius: $margin / 2
+
+#drummachine #volumeSwitch
+  position: relative
+  top: -$margin
+  left: $rowHeight - $margin
+  height: $rowHeight / 2
+  width: 2 * $margin
+  background: rgb(30, 30, 30)
+  border-radius: $margin / 2
+  box-shadow: $shadow / 2 $shadow / 2 $shadow / 4 black
+
+#drummachine .powerSliderArea
+  @extend #volumeSliderArea
+  width: ($drumPadsWidth - 2 * $rowHeight - 6 * $margin) / 2
+
+#drummachine .powerGroove
+  position: relative
+  left: ($drumPadsWidth - 2 * $rowHeight - 6 * $margin) / 4 - $margin / 2
+  height: 4 * $rowHeight / 8
+  width: $margin
+  background: black
+
+#drummachine #powerSwitch
+  position: relative
+  top: -$rowHeight / 4
+  height: $rowHeight / 4
+  width: ($drumPadsWidth - 2 * $rowHeight - 6 * $margin) / 2
+  background: rgb(0, 102, 255)
+  box-shadow: $shadow / 2 $shadow / 2 $shadow / 4 black
+
+#drummachine #setSwitch
+  @extend #powerSwitch
+  top: -$rowHeight / 2
+
+#drummachine #drumPads
+  background: $backgroundColor
+  width: $drumPadsWidth
+  height: $drumPadsWidth
+  border-radius: 1.5 * $margin
+
+#drummachine .drum-pad
+  display: inline-block
+  position: relative
+  width: $rowHeight
+  height: $rowHeight
+  background: rgb(120, 120, 120)
+  text-align: center
+  line-height: $rowHeight
+  font-family: 'K22 Xanthus', cursive
+  font-size: 4 * $rowHeight / 9
+  font-weight: bold
+  border-radius: $margin
+  box-shadow: $shadow $shadow $shadow / 2 black
+
+#drummachine #q
+  left: $margin - $shadow
+  top: $margin - $shadow
+
+#drummachine #w
+  left: 2 * $margin - $shadow
+  top: $margin - $shadow
+
+#drummachine #e
+  left: 3 * $margin - $shadow
+  top: $margin - $shadow
+
+#drummachine #a
+  left: $margin - $shadow
+  top: 2 * $margin - $shadow
+
+#drummachine #s
+  left: 2 * $margin - $shadow
+  top: 2 * $margin - $shadow
+
+#drummachine #d
+  left: 3 * $margin - $shadow
+  top: 2 * $margin - $shadow
+
+#drummachine #z
+  left: $margin - $shadow
+  top: 3 * $margin - $shadow
+
+#drummachine #x
+  left: 2 * $margin - $shadow
+  top: 3 * $margin - $shadow
+
+#drummachine #c
+  left: 3 * $margin - $shadow
+  top: 3 * $margin - $shadow

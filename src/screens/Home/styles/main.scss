@@ -1,0 +1,170 @@
+// be sure to add scss files to sideEffects in package.json ("sideEffects": ["*.scss"]) or they will be
+// pruned in production via tree shaking
+
+@import "../../../styles/custom";
+@import "~bootstrap/scss/bootstrap"; // requires jquery and popper.js as peer dependencies
+
+$projectTilePadding: 20px;
+$projectTileBorderWidth: 2px;
+$projectImageWidth: 200px;
+$contentGridItemMaxWidth: 500px;
+
+#home, #home a {
+    color: black;
+    font-family: 'Malgun Gothic', $font-family-sans-serif; // $font-family-sans-serif is from ~bootstrap\scss\_variables.scss
+}
+
+#home a {
+    text-decoration: underline;
+}
+
+#home section {
+    padding-bottom: 50px;
+}
+
+#home h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#home #welcomeGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .contentGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; // horizontal alignment
+    align-items: center; // vertical alignment
+}
+
+#home .contentGrid img {
+    width: 100px;
+    margin: 10px;
+}
+
+#home .contentGrid p {
+    max-width: $contentGridItemMaxWidth;
+    text-align: justify;
+}
+
+#home .contentGrid .projectTech {
+    width: inherit;
+    max-width: $contentGridItemMaxWidth;
+}
+
+#home .contentGrid .contentColumn.icons div {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#home .contentColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+#home #self {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#home .projectTiles {
+    margin: 0 auto;
+}
+
+#home .projectTileBorder {
+    background: rgb(255, 255, 153);
+    padding: 0.5 * $projectTilePadding;
+}
+
+#home .projectTile {
+    background: rgb(197, 197, 119);
+    padding: $projectTilePadding;
+    border: $projectTileBorderWidth solid black;
+    border-radius: 1.5 * $projectTilePadding;
+}
+
+#home .projectImage {
+    width: $projectImageWidth;
+    height: $projectImageWidth;
+    border-radius: 0.5 * $projectTilePadding;
+}
+
+%projectText {
+    width: $projectImageWidth;
+    text-align: center;
+    padding-top: $projectTilePadding;
+}
+
+#home .projectTitle {
+    @extend %projectText;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#home .contentGrid.sourceCode {
+    width: $projectImageWidth;
+    margin: auto;
+    padding-top: 0.5 * $projectTilePadding;
+}
+
+#home .contentGrid.sourceCode img {
+    width: 16px;
+    margin: 0;
+}
+
+#home .projectDescription {
+    @extend %projectText;
+    text-align: justify;
+}
+
+#home .projectTech {
+    @extend %projectText;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home .projectTechName {
+    background: rgb(141, 141, 85);
+    color: white;
+    margin: 5px;
+    padding: 2px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+@media (min-width: 253px) {
+    #home {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 525px) {
+    #home {
+        margin: 0 8%;
+    }
+
+    #home .projectImage, #home .projectTitle, #home .projectDescription, #home .projectTile .projectTech {
+        width: 3/2 * $projectImageWidth;
+    }
+
+    #home .projectImage {
+        height: 3/2 * $projectImageWidth;
+    }
+    
+    #home .contentGrid img {
+        width: 150px;
+    }
+    
+    #home .contentGrid .contentColumn.icons div {
+        font-size: 22px;
+    }
+    
+    #home .contentGrid.sourceCode {
+        width: 3/2 * 0.7 * $projectImageWidth;
+    }
+}

@@ -11,7 +11,7 @@ import '../styles/main.scss';
 
 export default class Home extends React.Component {
     componentDidMount() {
-        setNavandBackgroundStyles('rgb(255, 255, 153)', null, '#home');
+        setNavandBackgroundStyles('rgb(240, 240, 240)', null, '#home');
         addHiddenBlocks();
         setWelcomeSectionHeight();
         scrollToHash();

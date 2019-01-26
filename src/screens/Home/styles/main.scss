@@ -77,12 +77,12 @@ $contentGridItemMaxWidth: 500px;
 }
 
 #home .projectTileBorder {
-    background: rgb(255, 255, 153);
+    background: rgb(240, 240, 240);
     padding: 0.5 * $projectTilePadding;
 }
 
 #home .projectTile {
-    background: rgb(197, 197, 119);
+    background: rgb(200, 200, 200);
     padding: $projectTilePadding;
     border: $projectTileBorderWidth solid black;
     border-radius: 1.5 * $projectTilePadding;
@@ -129,7 +129,7 @@ $contentGridItemMaxWidth: 500px;
 }
 
 #home .projectTechName {
-    background: rgb(141, 141, 85);
+    background: rgb(100, 100, 100);
     color: white;
     margin: 5px;
     padding: 2px 8px;

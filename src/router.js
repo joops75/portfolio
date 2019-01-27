@@ -13,7 +13,6 @@ import {
     ForceDirectedGraph,
     Treemap
 } from "./components/LoadableComponents";
-import Spinner from './screens/Spinner/components/Main';
 
 const AppRouter = () => (
     <HashRouter>
@@ -27,7 +26,6 @@ const AppRouter = () => (
             <Route path="/choroplethmap/" component={ChoroplethMap} />
             <Route path="/forcedirectedgraph/" component={ForceDirectedGraph} />
             <Route path="/treemap/" component={Treemap} />
-            <Route path="/spinner/" component={Spinner} />
         </div>
     </HashRouter>
 );

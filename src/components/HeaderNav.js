@@ -3,14 +3,13 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
     Dropdown,
     DropdownToggle,
     DropdownMenu
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import portfolioIcon from '../assets/images/portfolioIcon.svg';
 import projectInfo from '../assets/data/projectInfo';
 import { FRONTEND, FULLSTACK } from '../assets/data/projectTypes';
@@ -63,7 +62,7 @@ export default class Example extends React.Component {
     }
     close(e) {
         this.setState({ isOpen: false });
-        scrollToHash(e.target.attributes.href.nodeValue);
+        scrollToHash(e.target.attributes.href.value);
         this.closefrontEndDropdown();
         this.closefullStackDropdown();
     }
@@ -75,7 +74,10 @@ export default class Example extends React.Component {
     generateDropdownItems(projectType) {
         return projectInfo.map(({ href, title, type }) => {
             if (type !== projectType) return;
-            return <a key={title} className="dropdown-item" href={href} target={type === FRONTEND ? '' : '_blank'} onClick={this.close}>{title}</a>
+            if (type === FRONTEND) {
+                return <Link key={title} className="dropdown-item" to={href} onClick={this.close}>{title}</Link>
+            }
+            return <a key={title} className="dropdown-item" href={href} target="_blank" onClick={this.close}>{title}</a>
         });
     }
     render() {
@@ -84,21 +86,21 @@ export default class Example extends React.Component {
                 <Navbar color="dark" dark expand="md">
                     {/* place NavbarToggler after NavbarBrand for right alignment */}
                     <NavbarToggler onClick={this.toggle} />
-                    <NavbarBrand href="/#/" onClick={this.close}><img src={portfolioIcon} />S. Cooper's Portfolio</NavbarBrand>
+                    <Link to="/" className="navbar-brand" onClick={this.close}><img src={portfolioIcon} />S. Cooper's Portfolio</Link>
                     <Collapse onExited={this.onExited} isOpen={this.state.isOpen} navbar>
                         {/* remove ml-auto class for left alignment */}
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/#/#welcome" onClick={this.close}>Welcome</NavLink>
+                                <Link to="/#welcome" className="nav-link" onClick={this.close}>Welcome</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/#/#projects" onClick={this.close}>Projects</NavLink>
+                                <Link to="/#projects" className="nav-link" onClick={this.close}>Projects</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/#/#links" onClick={this.close}>Links</NavLink>
+                                <Link to="/#links" className="nav-link" onClick={this.close}>Links</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/#/#about" onClick={this.close}>About</NavLink>
+                                <Link to="/#about" className="nav-link" onClick={this.close}>About</Link>
                             </NavItem>
                             <Dropdown isOpen={this.state.frontEndDropdownIsOpen} toggle={this.togglefrontEndDropdownIsOpen} nav inNavbar>
                                 <DropdownToggle

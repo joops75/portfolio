@@ -1,5 +1,6 @@
 import React from 'react';
 import Masonry from 'react-masonry-component';
+import { Link } from 'react-router-dom';
 import GenerateTechTiles from './GenerateTechTiles';
 import githubIcon from '../../../assets/images/githubIcon.png'
 import html5Icon from '../../../assets/images/html5Icon.svg';
@@ -9,14 +10,28 @@ import projectInfo from '../../../assets/data/projectInfo';
 import { FRONTEND } from '../../../assets/data/projectTypes';
 
 export default class ProjectTiles extends React.Component {
+    generateImageAndLink(type, title, href, src) {
+        const projectImage = <img className="projectImage" src={src} alt={title} />;
+        if (type === FRONTEND) {
+            return (
+                <Link key={title} to={href}>
+                    {projectImage}
+                </Link>
+            );
+        }
+        return (
+            <a key={title} href={href} target="_blank">
+                {projectImage}
+            </a>
+        );
+    }
+
     render() {
         const projectTiles = projectInfo.map(({ src, href, title, type, description, tech, code }, i) => {
            return (
                 <div key={i} className="projectTileBorder">
                     <div className="projectTile">
-                        <a href={href} target={type === FRONTEND ? '' : '_blank'}>
-                            <img className="projectImage" src={src} alt={title} />
-                        </a>
+                        {this.generateImageAndLink(type, title, href, src)}
                         <div className="projectTitle">{title} ({type})</div>
                         <div className="contentGrid sourceCode">
                             <img src={githubIcon} />

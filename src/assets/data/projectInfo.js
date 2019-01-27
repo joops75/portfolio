@@ -3,7 +3,7 @@ import { FRONTEND, FULLSTACK } from './projectTypes';
 export default [
     {
         src: require('../images/noughtsandcrosses.png'),
-        href: '/#/noughtsandcrosses',
+        href: '/noughtsandcrosses',
         title: 'Noughts and Crosses',
         type: FRONTEND,
         description: 'Play against an unbeatable CPU! The CPU analyses a maximum of three possible moves for each player and plays the optimum one. Try not to lose! Also known as tic-tac-toe.',
@@ -12,7 +12,7 @@ export default [
     },
     {
         src: require('../images/simongame.png'),
-        href: '/#/simongame',
+        href: '/simongame',
         title: 'Simon Game',
         type: FRONTEND,
         description: 'Successfully repeat a CPU-lead random sequence of 20 flashes to win! Play in strict mode to allow no mistakes. Based on the 1970s electronic game.',
@@ -21,7 +21,7 @@ export default [
     },
     {
         src: require('../images/drummachine.png'),
-        href: '/#/drummachine',
+        href: '/drummachine',
         title: 'Drum Machine',
         type: FRONTEND,
         description: 'Play a variety of sounds by via mouse clicks or keyboard presses. Change the sounds assigned to each button by using the ‘set’ switch or ‘o’ key. Alter the volume via the slider control or arrow keys. The names of any actions will appear in the display. Remember to power-up the ‘device’ first via the ‘pow’ switch or ‘p’ key!',
@@ -30,7 +30,7 @@ export default [
     },
     {
         src: require('../images/dungeoncrawler.png'),
-        href: '/#/dungeoncrawler',
+        href: '/dungeoncrawler',
         title: 'Dungeon Crawler',
         type: FRONTEND,
         description: 'Progress through 4 randomly generated dungeons and defeat the boss to win! Walk into enemies to attack and level-up by defeating them. Damage is dealt according to level, weapon and dungeon.',
@@ -39,7 +39,7 @@ export default [
     },
     {
         src: require('../images/forcedirectedgraph.png'),
-        href: '/#/forcedirectedgraph',
+        href: '/forcedirectedgraph',
         title: 'Force Directed Graph',
         type: FRONTEND,
         description: 'An interactive graph showing national contiguity. Countries which are neighbours have their flags joined by a line. Mouse over a flag to reveal its country’s name and click and drag it to reposition.',
@@ -48,7 +48,7 @@ export default [
     },
     {
         src: require('../images/choroplethmap.png'),
-        href: '/#/choroplethmap',
+        href: '/choroplethmap',
         title: 'Choropleth Map',
         type: FRONTEND,
         description: 'View a map of the US displaying the population % with a bachelors degree or higher for each state. Mouse over a state to view a popup for more information.',
@@ -57,7 +57,7 @@ export default [
     },
     {
         src: require('../images/treemap.png'),
-        href: '/#/treemap',
+        href: '/treemap',
         title: 'Treemap Diagram',
         type: FRONTEND,
         description: 'View a diagram using proportionally-accurate rectangles displaying the top video games sales, movie sales or Kickstarter pledges. Mouse over a rectangle to view a popup for more information.',

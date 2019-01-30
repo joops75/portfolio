@@ -359,7 +359,7 @@ class Engine extends React.Component {
     this.reset()
   }
   handleKeyDown(e) {
-    e.preventDefault()// prevents arrow keys scrolling page if scrollbar present
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'ArrowUp') e.preventDefault() // prevents arrow keys scrolling page if scrollbar present
     if (wKeyDown == false && sKeyDown == false && aKeyDown == false && dKeyDown == false && (e.key == 'ArrowUp' || e.key == 'ArrowDown' || e.key == 'ArrowLeft' || e.key == 'ArrowRight')) {
       timer = setInterval(this.animateWalk, walkingSpeed)
     }

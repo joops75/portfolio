@@ -1,10 +1,9 @@
 export default () => {
-    const welcomeSection = document.querySelector('#home #welcomeSection');
+    const welcomeSection = document.querySelector('#home #welcome');
     const navbar = document.querySelector('nav');
     if (welcomeSection && welcomeSection.clientHeight + navbar.clientHeight < window.innerHeight) {
-        const welcomeSectionHeight = window.innerHeight;
-        welcomeSection.style.height = welcomeSectionHeight + 'px';
-        const welcomeTitleHeight = document.querySelector('#home #welcome').clientHeight;
+        welcomeSection.style.height = window.innerHeight + 'px';
+        const welcomeTitleHeight = document.querySelector('#home #welcomeTitle').clientHeight + navbar.clientHeight;
         document.querySelector('#home #welcomeGrid').style.height = window.innerHeight - navbar.clientHeight - welcomeTitleHeight + 'px';
     }
 }

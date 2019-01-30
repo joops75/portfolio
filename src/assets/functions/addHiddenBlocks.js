@@ -16,7 +16,7 @@ export default () => {
     })(document.createElement("style"));
     
     const navbarHeight = document.querySelector('nav').clientHeight;
-    addRule("main h2::before", {
+    addRule("main section::before", {
         display: "block",
         content: "''",
         "margin-top": -navbarHeight + 'px',

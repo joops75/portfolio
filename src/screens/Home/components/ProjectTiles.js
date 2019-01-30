@@ -45,8 +45,8 @@ export default class ProjectTiles extends React.Component {
         });
     
         return (
-            <section>
-                <h2 id="projects">Projects</h2>
+            <section id="projects">
+                <h2>Projects</h2>
                 <p>Here is a selection of my personal web-development projects. All projects include the use of HTML, CSS and JavaScript in addition to the technologies listed with each one.</p>
                 <div className="contentGrid">
                     <div className="contentColumn icons">

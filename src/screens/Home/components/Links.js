@@ -5,8 +5,8 @@ import codepenIcon from '../../../assets/images/codepenIcon.png'
 
 export default () => {
     return (
-        <section>
-            <h2 id="links">Links</h2>
+        <section id="links">
+            <h2>Links</h2>
             <p>Have a look at other front end projects of mine on CodePen. Peruse my profile at freeCodeCamp, the website where I began learning web development. Check out my GitHub account to view the source code of all the projects listed here and more.</p>
             <div className="contentGrid">
                 <div className="contentColumn icons">

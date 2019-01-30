@@ -4,8 +4,8 @@ import self from '../../../assets/images/self.jpg';
 export default class Welcome extends Component {
     render() {
         return (
-            <section id="welcomeSection">
-                <h2 id="welcome">Welcome</h2>
+            <section id="welcome">
+                <h2 id="welcomeTitle">Welcome</h2>
                 <div id="welcomeGrid">
                     <div className="contentGrid">
                         <div className="contentColumn">

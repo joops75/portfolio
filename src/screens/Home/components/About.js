@@ -5,8 +5,8 @@ import ReactIcon from '../../../assets/images/reactIcon'
 
 export default () => {
     return (
-        <section>
-            <h2 id="about">About This Website</h2>
+        <section id="about">
+            <h2>About</h2>
             <div className="contentGrid">
                 <div className="contentColumn icons">
                     <img src={webpackIcon} />

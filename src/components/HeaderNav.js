@@ -82,60 +82,58 @@ export default class Example extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Navbar color="dark" dark expand="md">
-                    {/* place NavbarToggler after NavbarBrand for right alignment */}
-                    <NavbarToggler onClick={this.toggle} />
-                    <Link to="/" className="navbar-brand" onClick={this.close}><img src={portfolioIcon} />S. Cooper's Portfolio</Link>
-                    <Collapse onExited={this.onExited} isOpen={this.state.isOpen} navbar>
-                        {/* remove ml-auto class for left alignment */}
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <Link to="/#welcome" className="nav-link" onClick={this.close}>Welcome</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link to="/#projects" className="nav-link" onClick={this.close}>Projects</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link to="/#links" className="nav-link" onClick={this.close}>Links</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link to="/#about" className="nav-link" onClick={this.close}>About</Link>
-                            </NavItem>
-                            <Dropdown isOpen={this.state.frontEndDropdownIsOpen} toggle={this.togglefrontEndDropdownIsOpen} nav inNavbar>
-                                <DropdownToggle
-                                    tag="a"
-                                    onClick={this.togglefrontEndDropdownIsOpen}
-                                    data-toggle="dropdown"
-                                    aria-expanded={this.state.frontEndDropdownIsOpen}
-                                    nav
-                                    caret
-                                >
-                                    View Front-End Projects
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    {this.generateDropdownItems(FRONTEND)}
-                                </DropdownMenu>
-                            </Dropdown>
-                            <Dropdown isOpen={this.state.fullStackDropdownIsOpen} toggle={this.togglefullStackDropdownIsOpen} nav inNavbar>
-                                <DropdownToggle
-                                    tag="a"
-                                    onClick={this.togglefullStackDropdownIsOpen}
-                                    data-toggle="dropdown"
-                                    aria-expanded={this.state.fullStackDropdownIsOpen}
-                                    nav
-                                    caret
-                                >
-                                    View Full-Stack Projects
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    {this.generateDropdownItems(FULLSTACK)}
-                                </DropdownMenu>
-                            </Dropdown>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-            </div>
+            <Navbar id="navbar" color="dark" dark expand="md">
+                {/* place NavbarToggler after NavbarBrand for right alignment */}
+                <NavbarToggler onClick={this.toggle} />
+                <Link to="/" className="navbar-brand" onClick={this.close}><img src={portfolioIcon} />S. Cooper's Portfolio</Link>
+                <Collapse onExited={this.onExited} isOpen={this.state.isOpen} navbar>
+                    {/* remove ml-auto class for left alignment */}
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <Link to="/#welcome" className="nav-link" onClick={this.close}>Welcome</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link to="/#projects" className="nav-link" onClick={this.close}>Projects</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link to="/#links" className="nav-link" onClick={this.close}>Links</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link to="/#about" className="nav-link" onClick={this.close}>About</Link>
+                        </NavItem>
+                        <Dropdown isOpen={this.state.frontEndDropdownIsOpen} toggle={this.togglefrontEndDropdownIsOpen} nav inNavbar>
+                            <DropdownToggle
+                                tag="a"
+                                onClick={this.togglefrontEndDropdownIsOpen}
+                                data-toggle="dropdown"
+                                aria-expanded={this.state.frontEndDropdownIsOpen}
+                                nav
+                                caret
+                            >
+                                View Front-End Projects
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                {this.generateDropdownItems(FRONTEND)}
+                            </DropdownMenu>
+                        </Dropdown>
+                        <Dropdown isOpen={this.state.fullStackDropdownIsOpen} toggle={this.togglefullStackDropdownIsOpen} nav inNavbar>
+                            <DropdownToggle
+                                tag="a"
+                                onClick={this.togglefullStackDropdownIsOpen}
+                                data-toggle="dropdown"
+                                aria-expanded={this.state.fullStackDropdownIsOpen}
+                                nav
+                                caret
+                            >
+                                View Full-Stack Projects
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                {this.generateDropdownItems(FULLSTACK)}
+                            </DropdownMenu>
+                        </Dropdown>
+                    </Nav>
+                </Collapse>
+            </Navbar>
         );
     }
 }

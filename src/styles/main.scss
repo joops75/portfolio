@@ -4,12 +4,21 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap"; // requires jquery and popper.js as peer dependencies
 
+@font-face {
+    font-family: 'PermanentMarker-Regular';
+    src:  url('../assets/fonts/PermanentMarker-Regular.ttf') format('truetype');
+}
+
 nav.navbar {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 1; // necessary to keep navbar on top when using react-masonry-component
     font-family: 'Malgun Gothic', $font-family-sans-serif; // $font-family-sans-serif is from ~bootstrap\scss\_variables.scss
+}
+
+.navbar-brand {
+    font-family: 'PermanentMarker-Regular', cursive;
 }
 
 nav.navbar img {

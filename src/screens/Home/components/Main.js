@@ -7,11 +7,12 @@ import setNavandBackgroundStyles from '../../../assets/functions/setNavandBackgr
 import addHiddenBlocks from '../../../assets/functions/addHiddenBlocks';
 import scrollToHash from '../../../assets/functions/scrollToHash';
 import setWelcomeSectionHeight from '../../../assets/functions/setWelcomeSectionHeight';
+import portfolioBackgroundIcon from '../assets/images/portfolioBackgroundIcon.svg'
 import '../styles/main.scss';
 
 export default class Home extends React.Component {
     componentDidMount() {
-        setNavandBackgroundStyles('rgb(240, 240, 240)', null, '#home');
+        setNavandBackgroundStyles(null, portfolioBackgroundIcon, '#home');
         addHiddenBlocks();
         setWelcomeSectionHeight();
         scrollToHash();

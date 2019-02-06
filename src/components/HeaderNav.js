@@ -82,7 +82,7 @@ export default class Example extends React.Component {
     }
     render() {
         return (
-            <Navbar id="navbar" color="dark" dark expand="md">
+            <Navbar color="dark" dark expand="md">
                 {/* place NavbarToggler after NavbarBrand for right alignment */}
                 <NavbarToggler onClick={this.toggle} />
                 <Link to="/" className="navbar-brand" onClick={this.close}><img src={portfolioIcon} />S. Cooper's Portfolio</Link>

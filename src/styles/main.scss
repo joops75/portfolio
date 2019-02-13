@@ -9,6 +9,10 @@
     src:  url('../assets/fonts/PermanentMarker-Regular.ttf') format('truetype');
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 nav.navbar {
     position: absolute;
     top: 0;

@@ -99,5 +99,14 @@ export default [
         description: 'View Pinterest-style ‘magnets’ with images and text. Login via password or Twitter to create your own magnets and appraise those of others. Only one ‘like’ or ‘dislike’ per user per magnet possible! Edit a magnet but beware that appraisal data will be reset. Merge local and Twitter-based accounts.',
         tech: 'Node, Express, Sass, jQuery, Bootstrap, EJS, MongoDB, Mongoose, React, Passport, Masonry, Gulp, Browserify, Babelify, Watchify',
         code: 'https://github.com/joops75/magnet-izer'
+    },
+    {
+        src: require('../images/smartlist.png'),
+        href: 'https://joopssmartlist.herokuapp.com/',
+        title: 'Smartlist',
+        type: FULLSTACK,
+        description: 'Keep track of groups of tasks with a deadline. Create an account where you can make projects with associated tasks. See at a glance how much time remains on a task with a real-time countdown. Automatically records and displays any creation, editing and deletion events. Built using test-driven development.',
+        tech: 'PHP, Laravel, PHPUnit, Laravel Dusk, TDD, Blade, Bootstrap, Sass, Vue',
+        code: 'https://github.com/joops75/smart-list'
     }
 ];
